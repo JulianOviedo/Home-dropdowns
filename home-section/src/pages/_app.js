@@ -11,10 +11,11 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Dropdowns</title>
       </Head>
+      
       <ThemeProvider theme={theme}>
-      <main className={epilogue.className}> 
-      <Component {...pageProps} />
-      </main>
+        <main className={epilogue.className}>
+          <Component {...pageProps} />
+        </main>
       </ThemeProvider>
     </>
   )
