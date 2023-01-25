@@ -12,6 +12,12 @@ const theme = createMuiTheme({
             main: 'hsl(0, 0%, 8%)' //Almost Black
         }
     },
+    typography: {
+        fontWeigth: 500,
+        [theme.breakpoints.up('sm')]: {
+            fontWeigth: 700
+        }
+    }
 });
 
 export default theme;
