@@ -1,11 +1,12 @@
 import Footer from "@/components/Footer";
-import { Button } from "@mui/material";
+import MainSection from "@/components/MainSection";
 
 export default function Home() {
 
   return (
     <>
       <Footer/>
+      <MainSection/>
     </>
   )
 }
