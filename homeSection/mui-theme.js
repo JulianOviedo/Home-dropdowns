@@ -20,5 +20,12 @@ export const theme = createTheme({
             fontWeight: 400,
             color: 'hsl(0, 0%, 41%)'
         }
-    }
+    },
+    breakpoints: {
+        values: {
+          xs: 0,
+          sm: 375, //MOBILE DESIGN
+          md: 1440, //DESKTOP DESIGN
+        },
+      },
 });
