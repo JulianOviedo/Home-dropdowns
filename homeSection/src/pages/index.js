@@ -1,12 +1,14 @@
 import Footer from "@/components/Footer";
-import MainSection from "@/components/MainSection";
+import MainSection from "@/components/MainSection/MainSection";
+import PanelImg from "@/components/PanelImg/PanelImg";
 
 export default function Home() {
 
   return (
     <>
-      <Footer/>
       <MainSection/>
+      <PanelImg/>
+      <Footer/>
     </>
   )
 }
