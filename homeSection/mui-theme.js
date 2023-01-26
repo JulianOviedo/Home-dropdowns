@@ -12,4 +12,13 @@ export const theme = createTheme({
             main: 'hsl(0, 0%, 8%)' //Almost Black
         }
     },
+    typography: {
+        h1: {
+            fontWeight: 700
+        },
+        body1: {
+            fontWeight: 400,
+            color: 'hsl(0, 0%, 41%)'
+        }
+    }
 });
