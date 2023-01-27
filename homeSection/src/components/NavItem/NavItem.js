@@ -1,10 +1,6 @@
 import { MenuItem, MenuList, Typography } from '@mui/material'
 import { useState } from 'react'
 
-import arrowDown from '../../../public/icon-arrow-down.svg'
-import arrowUp from '../../../public/icon-arrow-up.svg'
-
-
 
 export default function NavItem({ name, dropdown, arrayItems, arrayIcons }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false) //dropdown
@@ -15,7 +11,7 @@ export default function NavItem({ name, dropdown, arrayItems, arrayIcons }) {
     return (
         <>
             {dropdown ?
-                <Typography sx={{p:'5px', textAlign: 'center'}} variant='a' onClick={handleDropdown}>
+                <Typography sx={{textAlign: 'center', cursor: 'pointer'}} variant='a' onClick={handleDropdown}>
                     {name} {isDropdownOpen ? <img src='icon-arrow-down.svg' alt='arrow'/> : <img alt='arrow' src='icon-arrow-up.svg'/>}
                     {isDropdownOpen &&
                         <MenuList sx={{borderRadius: '20px', backgroundColor: 'white', boxShadow:' 0 3px 10px rgb(0 0 0 / 0.2)', position:'absolute',mt:'10px', alignItems:'center'}}>
@@ -34,7 +30,7 @@ export default function NavItem({ name, dropdown, arrayItems, arrayIcons }) {
                     }
                 </Typography>
                 :
-                <Typography sx={{p:'5px'}} variant='a'>{name}</Typography>}
+                <Typography sx={{textAlign: 'center', cursor: 'pointer'}} variant='a'>{name}</Typography>}
         </>
     )
 }
