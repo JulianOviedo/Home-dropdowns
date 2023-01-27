@@ -1,3 +1,5 @@
+import { Box } from '@mui/material'
+import Image from 'next/image'
 import NavItem from '../NavItem/NavItem'
 import styles from './NavBar.module.css'
 
@@ -9,12 +11,15 @@ const NavBar = () => {
     const companyItems = ['History', 'Our Team', 'Blog']
 
     return (
-        <a className={styles.a}>
-            <NavItem name='Features' dropdown={true} arrayItems={featuresItems} arrayIcons={featuresLogos} />
-            <NavItem name='Company' dropdown={true} arrayItems={companyItems}/>
-            <NavItem name='Careers'/>
-            <NavItem name='About'/>
-        </a>
+        <Box sx={{display:'flex', p: '20px', alignItems: 'center'}}>
+            <Image width="84" height="27" src='logo.svg' alt='logo' />
+            <nav className={styles.nav}>
+                <NavItem name='Features' dropdown={true} arrayItems={featuresItems} arrayIcons={featuresLogos} />
+                <NavItem name='Company' dropdown={true} arrayItems={companyItems} />
+                <NavItem name='Careers' />
+                <NavItem name='About' />
+            </nav>
+        </Box>
     )
 
 }
