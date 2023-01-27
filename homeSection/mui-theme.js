@@ -34,13 +34,9 @@ theme.typography.body1 = {
     color: color.secondary.main
 }
 
-theme.typography.aDropdown = {
+theme.typography.a = {
     color: color.secondary.main,
     '&:hover': {
         color: color.terciary.main
     },
-}
-
-theme.typography.a = {
-    color: color.secondary.main,
 }
