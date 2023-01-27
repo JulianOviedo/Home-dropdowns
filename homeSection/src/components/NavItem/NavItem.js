@@ -11,14 +11,14 @@ export default function NavItem({ name, dropdown, arrayItems, arrayIcons }) {
     return (
         <>
             {dropdown ?
-                <Typography variant='aDropdown' onClick={handleDropdown}>
+                <Typography sx={{p:'5px'}} variant='a' onClick={handleDropdown}>
                     {name}
                     {isDropdownOpen &&
-                        <MenuList>
+                        <MenuList sx={{borderRadius: '20px', backgroundColor: 'white', boxShadow:' 0 3px 10px rgb(0 0 0 / 0.2)', position:'absolute'}}>
                             {arrayItems.map((item, idx) => {
                                 return (
                                     <>
-                                        <MenuItem key={idx}>
+                                        <MenuItem sx={{gap: '10px'}} key={idx}>
                                             {arrayIcons && arrayIcons[idx] && <img alt='icon' src={arrayIcons[idx]} key={idx} />}
                                             {/* // if u dont want to add any icon to the MenuItem u need to add a 'null' in the array of icons  */}
                                             {item}
@@ -30,7 +30,7 @@ export default function NavItem({ name, dropdown, arrayItems, arrayIcons }) {
                     }
                 </Typography>
                 :
-                <Typography variant='a'>{name}</Typography>}
+                <Typography sx={{p:'5px'}} variant='a'>{name}</Typography>}
         </>
     )
 }
