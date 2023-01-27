@@ -23,11 +23,24 @@ export const theme = createTheme({
     },
 });
 
+const color = theme.palette
+
 theme.typography.h1 = {
     fontWeight: 700,
 }
 
 theme.typography.body1 = {
     fontWeight: 400,
-    color: 'hsl(0, 0%, 41%)',
+    color: color.secondary.main
+}
+
+theme.typography.aDropdown = {
+    color: color.secondary.main,
+    '&:hover': {
+        color: color.terciary.main
+    },
+}
+
+theme.typography.a = {
+    color: color.secondary.main,
 }
