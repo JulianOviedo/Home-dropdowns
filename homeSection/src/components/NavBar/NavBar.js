@@ -1,4 +1,5 @@
 import NavItem from '../NavItem/NavItem'
+import styles from './NavBar.module.css'
 
 const NavBar = () => {
 
@@ -8,9 +9,11 @@ const NavBar = () => {
     const companyItems = ['History', 'Our Team', 'Blog']
 
     return (
-        <a>
+        <a className={styles.a}>
             <NavItem name='Features' dropdown={true} arrayItems={featuresItems} arrayIcons={featuresLogos} />
             <NavItem name='Company' dropdown={true} arrayItems={companyItems}/>
+            <NavItem name='Careers'/>
+            <NavItem name='About'/>
         </a>
     )
 
