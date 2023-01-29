@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import Image from 'next/image'
 import NavItem from '../NavItem/NavItem'
+import SignButtons from '../SignButtons/SignButtons'
 import styles from './NavBar.module.css'
 
 const NavBar = () => {
@@ -11,7 +12,7 @@ const NavBar = () => {
     const companyItems = ['History', 'Our Team', 'Blog']
 
     return (
-        <Box sx={{display:'flex', p: '20px', alignItems: 'center'}}>
+        <Box sx={{ display: 'flex', p: '20px', alignItems: 'center' }}>
             <Image width="84" height="27" src='logo.svg' alt='logo' />
             <nav className={styles.nav}>
                 <NavItem name='Features' dropdown={true} arrayItems={featuresItems} arrayIcons={featuresLogos} />
@@ -19,6 +20,7 @@ const NavBar = () => {
                 <NavItem name='Careers' />
                 <NavItem name='About' />
             </nav>
+            {/* <SignButtons /> */}
         </Box>
     )
 
