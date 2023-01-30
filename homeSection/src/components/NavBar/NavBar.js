@@ -12,7 +12,7 @@ const NavBar = () => {
     const companyItems = ['History', 'Our Team', 'Blog']
 
     return (
-        <Box sx={{ display: 'grid', gridTemplateColumns: '10% 70% auto' ,p: '20px'}}>
+        <Box component='header' sx={{ display: 'grid', gridTemplateColumns: '10% 70% auto' ,p: '20px', height:40}}>
             <Image width="84" height="27" src='logo.svg' alt='logo' />
             <nav className={styles.nav}>
                 <NavItem name='Features' dropdown={true} arrayItems={featuresItems} arrayIcons={featuresLogos} />
