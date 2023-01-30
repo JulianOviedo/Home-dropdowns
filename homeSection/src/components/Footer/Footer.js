@@ -1,7 +1,7 @@
 import { Box } from '@mui/material'
 import styles from './Footer.module.css'
 
-const imgs = ['/client-audiophile.svg', '/client-databiz.svg', 'client-maker.svg', 'client-meet.svg']
+const imgs = ['/client-databiz.svg', '/client-audiophile.svg', 'client-meet.svg', 'client-maker.svg']
 
 export default function Footer() {
 

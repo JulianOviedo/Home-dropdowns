@@ -39,12 +39,15 @@ export const theme = createTheme({
 const color = theme.palette
 
 theme.typography.h1 = {
-    fontWeight: 700,
+    fontWeight: 600,
+    fontSize: '82px'
 }
 
-theme.typography.body1 = {
-    fontWeight: 400,
-    color: color.secondary.main
+theme.typography.h2 = {
+    fontWeight: 500,
+    color: color.secondary.main,
+    fontSize: '18px',
+    lineHeight: '28px',
 }
 
 theme.typography.a = {

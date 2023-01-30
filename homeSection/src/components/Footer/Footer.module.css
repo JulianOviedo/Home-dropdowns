@@ -1,8 +1,7 @@
 .footer {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
+    gap: 60px;
+    align-items: flex-end;
     padding: 10px;
 }

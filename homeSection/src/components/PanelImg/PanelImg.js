@@ -1,6 +1,9 @@
 import mobileLayout from '../../../public/image-hero-mobile.png'
 import desktopLayout from '../../../public/image-hero-desktop.png'
 import { useEffect, useState } from 'react'
+import Image from 'next/image';
+import styles from './PanelImg.module.css'
+
 
 export default function PanelImg() {
     const [currentImage, setCurrentImage] = useState(desktopLayout);
@@ -19,8 +22,8 @@ export default function PanelImg() {
       }, []);
 
     return (
-        <figure>
-            <img src={currentImage.src} width='100%' height='100%' alt='panelImg' />
+        <figure className={styles.figure}>
+            <Image src={currentImage.src}  fill alt='panelImg' />
         </figure>
     )
 }

@@ -1,5 +1,7 @@
+.section {
+    margin-top: 80px;
+}
+
 @media (max-width: 600px) {
-    .section {
-        /* justify-content: center; */
-    }
+    .section {}
 }

@@ -34,3 +34,4 @@ export default function NavItem({ name, dropdown, arrayItems, arrayIcons }) {
         </>
     )
 }
+
