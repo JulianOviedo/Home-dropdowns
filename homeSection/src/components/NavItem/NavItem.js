@@ -11,14 +11,14 @@ export default function NavItem({ name, dropdown, arrayItems, arrayIcons }) {
     return (
         <>
             {dropdown ?
-                <Typography sx={{textAlign: 'center', cursor: 'pointer'}} variant='a' onClick={handleDropdown}>
+                <Typography sx={{textAlign: 'center', cursor: 'pointer'}} variant='a' component="a" onClick={handleDropdown}>
                     {name} {isDropdownOpen ? <img src='icon-arrow-down.svg' alt='arrow'/> : <img alt='arrow' src='icon-arrow-up.svg'/>}
                     {isDropdownOpen &&
                         <MenuList sx={{borderRadius: '20px', backgroundColor: 'white', boxShadow:' 0 3px 10px rgb(0 0 0 / 0.2)', position:'absolute',mt:'10px', alignItems:'center'}}>
                             {arrayItems.map((item, idx) => {
                                 return (
                                     <>
-                                        <MenuItem sx={{gap: '10px'}} key={idx}>
+                                        <MenuItem variant='a' component="a" sx={{gap: '10px'}} key={idx}>
                                             {arrayIcons && arrayIcons[idx] && <img alt='icon' src={arrayIcons[idx]} key={idx} />}
                                             {/* // if u dont want to add any icon to the MenuItem u need to add a 'null' in the array of icons  */}
                                             {item}
