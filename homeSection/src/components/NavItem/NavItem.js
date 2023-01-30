@@ -14,7 +14,7 @@ export default function NavItem({ name, dropdown, arrayItems, arrayIcons }) {
                 <Typography sx={{textAlign: 'center', cursor: 'pointer', width:140}} variant='a' component="a" onClick={handleDropdown}>
                     {name} {isDropdownOpen ? <img src='icon-arrow-down.svg' alt='arrow'/> : <img alt='arrow' src='icon-arrow-up.svg'/>}
                     {isDropdownOpen &&
-                        <MenuList  sx={{display: 'flex',flexDirection:'column',borderRadius: '20px', backgroundColor: 'white', boxShadow:' 0 3px 10px rgb(0 0 0 / 0.2)'  ,mt:'10px', alignItems:'center', p:'10px', justifyContent:'center'}}>
+                        <MenuList  sx={{display: 'flex',flexDirection:'column',borderRadius: '20px', backgroundColor: 'white', boxShadow:' 0 3px 10px rgb(0 0 0 / 0.2)'  ,mt:'10px', alignItems:'flex-start', p:'10px'}}>
                             {arrayItems.map((item, idx) => {
                                 return (
                                     <>
