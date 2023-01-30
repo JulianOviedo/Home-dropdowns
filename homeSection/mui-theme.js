@@ -21,6 +21,19 @@ export const theme = createTheme({
             md: 1440, //DESKTOP DESIGN
         },
     },
+    components: {
+        MuiButton: {
+            styleOverrides : {
+                root : {
+                    backgroundColor: 'inherit',
+                    color: 'hsl(0, 0%, 41%)',
+                    textTransform:'none',
+                    boxShadow: 'none',
+                    borderRadius: '15px '
+                }
+            }
+        }
+    }
 });
 
 const color = theme.palette
@@ -40,3 +53,4 @@ theme.typography.a = {
         color: color.terciary.main
     },
 }
+
