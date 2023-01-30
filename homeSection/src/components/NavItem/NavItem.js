@@ -30,7 +30,7 @@ export default function NavItem({ name, dropdown, arrayItems, arrayIcons }) {
                     }
                 </Typography>
                 :
-                <Typography sx={{textAlign: 'center', cursor: 'pointer'}} variant='a'>{name}</Typography>}
+                <Typography sx={{textAlign: 'center', cursor: 'pointer'}} component="a" variant='a'>{name}</Typography>}
         </>
     )
 }
