@@ -9,7 +9,7 @@ export default function MainSection() {
         <section className={styles.section}>
             <Box sx={{
                 display: 'flex', flexDirection: 'column', alignItems:'left', gap:'50px', flexWrap: 'wrap', [theme.breakpoints.down('sm')]: {
-                    alignItems: 'center', py: '20px', textAlign: 'center', gap: '15px'
+                    alignItems: 'center', py: '20px', textAlign: 'center', gap: '15px', px:'5px'
                 }
             }}>
                 <Typography variant="h1" >Make remote work</Typography>

@@ -15,7 +15,7 @@ const NavBar = () => {
     const companyItems = ['History', 'Our Team', 'Blog']
 
     return (
-        <Box component='header' sx={{ display: 'grid', gridTemplateColumns: '10% 70% auto' ,p: '20px', height:40, [theme.breakpoints.down('sm')]: {display: 'flex', justifyContent: 'space-between'}}}>
+        <Box component='header' sx={{ display: 'grid', gridTemplateColumns: '10% 70% auto' ,p: '20px', height:40, [theme.breakpoints.down('sm')]: {display: 'flex', justifyContent: 'space-between', p:'10px'}}}>
             <Image width="84" height="27" src='logo.svg' alt='logo' />
             <BurgerMenu/>
             <nav className={styles.nav}>

@@ -17,8 +17,9 @@ export const theme = createTheme({
     breakpoints: {
         values: {
             xs: 0,
-            sm: 375, //MOBILE DESIGN
-            md: 1440, //DESKTOP DESIGN
+            sm: 376, //MOBILE DESIGN
+            md: 850,
+            lg: 1440, //DESKTOP DESIGN
         },
     },
     components: {
@@ -42,8 +43,8 @@ theme.typography.h1 = {
     fontWeight: 600,
     fontSize: '82px',
     [theme.breakpoints.down('sm')]: {
-        fontSize: '20px',
-        fontWeight: 400
+        fontSize: '35px',
+        fontWeight: 700
     }
 }
 
@@ -52,6 +53,9 @@ theme.typography.h2 = {
     color: color.secondary.main,
     fontSize: '18px',
     lineHeight: '28px',
+    [theme.breakpoints.down('sm')]: {
+        fontSize: '17px',
+    }
 }
 
 theme.typography.a = {
