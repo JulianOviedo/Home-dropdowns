@@ -14,13 +14,13 @@ export default function Home() {
       <NavBar />
       <Container sx={{[theme.breakpoints.up('sm')]: { gridTemplateColumns: '60% 40%', height:'100vh',gridTemplateRows: '80%', px:'150px !important'
         ,display: 'grid'}, [theme.breakpoints.down('sm')]: {
-          flexDirection: 'column', px: 0, display:'flex'
+          flexDirection: 'column-reverse', px: 0, display:'flex'
         }
       }}>
          <Box sx={{[theme.breakpoints.up('sm')]: {width:'80%', height:'100%', display: 'grid', gridTemplateRows: '75% 25%'},
-                  [theme.breakpoints.down('sm')]:{display:'flex'}}}>
+                  [theme.breakpoints.down('sm')]:{display:'flex', flexDirection: 'column'}}}>
           <MainSection />
-          {/* <Footer /> */}
+          <Footer />
         </Box>
         <PanelImg />
       </Container>
