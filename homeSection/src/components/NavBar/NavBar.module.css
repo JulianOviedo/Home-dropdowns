@@ -3,3 +3,9 @@
     gap: 80px;
     margin-top: 5px;
 }
+
+@media (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+}
