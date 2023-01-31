@@ -5,3 +5,9 @@
     align-items: flex-end;
     padding: 10px;
 }
+
+@media (max-width:600px) {
+    .footer {
+        gap: 20px;
+    }
+}
