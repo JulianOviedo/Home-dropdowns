@@ -9,11 +9,11 @@ export default function MainSection() {
         <section className={styles.section}>
             <Box sx={{
                 display: 'flex', flexDirection: 'column', alignItems:'left', gap:'50px', flexWrap: 'wrap', [theme.breakpoints.down('sm')]: {
-                    alignItems: 'center', py: '20px', px: '10px', textAlign: 'center', gap: '15px'
+                    alignItems: 'center', py: '20px', textAlign: 'center', gap: '15px'
                 }
             }}>
                 <Typography variant="h1" >Make remote work</Typography>
-                <Typography variant="h2" sx={{width:'80%'}}>Get your team in sync, no matter your location. Streamline processes, create team rituals and watch productivity soar.</Typography>
+                <Typography variant="h2" sx={{width:{sm:'80%', xs:'100%'}}}>Get your team in sync, no matter your location. Streamline processes, create team rituals and watch productivity soar.</Typography>
                 <Box sx={{ width: 180, height: 65 }}>
                     <ButtonPrimary says='Learn more' />
                 </Box>
