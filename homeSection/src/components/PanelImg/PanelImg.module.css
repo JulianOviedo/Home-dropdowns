@@ -2,3 +2,9 @@
     width: 100%;
     position: relative;
 }
+
+@media (max-width: 600px) {
+    .figure {
+        height: 60vh;
+    }
+}
