@@ -40,7 +40,11 @@ const color = theme.palette
 
 theme.typography.h1 = {
     fontWeight: 600,
-    fontSize: '82px'
+    fontSize: '82px',
+    [theme.breakpoints.down('sm')]: {
+        fontSize: '20px',
+        fontWeight: 400
+    }
 }
 
 theme.typography.h2 = {
