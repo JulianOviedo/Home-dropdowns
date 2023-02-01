@@ -6,7 +6,6 @@
     z-index: 500;
     top: 0;
     right: 0;
-    overflow-y: scroll;
     animation: slideInFromRight 0.5s ease-out;
 }
 
