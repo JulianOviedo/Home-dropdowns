@@ -7,4 +7,4 @@ deployment ---->>> https://homedropdowns.vercel.app/
 
 MOBILE DESIGN (375px)
 
-![MOBILE-DESIGN](https://postimg.cc/nXgmN0Tb)
+![MOBILE-DESIGN](https://i.postimg.cc/Jh4QDFkn/Captura-de-Pantalla-2023-02-01-a-la-s-14-34-03.png)
