@@ -24,16 +24,16 @@ export const theme = createTheme({
     },
     components: {
         MuiButton: {
-            styleOverrides : {
-                root : {
+            styleOverrides: {
+                root: {
                     backgroundColor: 'inherit',
                     color: 'hsl(0, 0%, 41%)',
-                    textTransform:'none',
+                    textTransform: 'none',
                     boxShadow: 'none',
                     borderRadius: '15px '
                 }
             }
-        }
+        },
     }
 });
 

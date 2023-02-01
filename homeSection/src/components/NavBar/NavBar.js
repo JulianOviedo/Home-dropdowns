@@ -17,7 +17,9 @@ const NavBar = () => {
     return (
         <Box component='header' sx={{ display: 'grid', gridTemplateColumns: '10% 70% auto' ,p: '20px', height:40, [theme.breakpoints.down('sm')]: {display: 'flex', justifyContent: 'space-between', p:'10px'}}}>
             <Image width="84" height="27" src='logo.svg' alt='logo' />
-            <BurgerMenu/>
+            {/* display none on desktop design */}
+            <BurgerMenu/> 
+            {/* display none on desktop design */}
             <nav className={styles.nav}>
                 <NavItem name='Features' dropdown={true} arrayItems={featuresItems} arrayIcons={featuresLogos} />
                 <NavItem name='Company' dropdown={true} arrayItems={companyItems} />

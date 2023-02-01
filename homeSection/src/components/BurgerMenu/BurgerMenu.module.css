@@ -1,0 +1,41 @@
+.burger-menu--container {
+    width: 70vw;
+    height: 100vh;
+    position: absolute;
+    background-color: hsl(0, 0%, 98%);
+    z-index: 500;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    animation: slideInFromRight 0.5s ease-out;
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(-70vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.burger-menu--container::before {
+    content: "";
+    position: absolute;
+    right: 70vw;
+    top: 0;
+    bottom: 0;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding-left: 10px;
+}
