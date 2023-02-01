@@ -19,7 +19,7 @@ const BurgerMenu = () => {
     const companyItems = ['History', 'Our Team', 'Blog']
 
     return (
-        <Box sx={{ display: { sm: 'none', xs: 'flex', flexDirection: 'column' } }}>
+        <Box sx={{ display: { sm: 'none', xs: 'flex' } }}>
             <MenuIcon onClick={handleBurgerMenu} />
             {isMenuOpen &&
                 <div className={styles['burger-menu--container']}>
@@ -27,13 +27,12 @@ const BurgerMenu = () => {
                         <CloseIcon onClick={handleBurgerMenu} sx={{ fontSize: '40px', mb: '15px' }} />
                     </Box>
                     <nav className={styles.nav}>
-                        <NavItem name='Features' dropdown={true} arrayItems={featuresItems}
-                            arrayIcons={featuresLogos} />
+                        <NavItem name='Features' dropdown={true} arrayItems={featuresItems} arrayIcons={featuresLogos} />
                         <NavItem name='Company' dropdown={true} arrayItems={companyItems} />
                         <NavItem name='Careers' />
                         <NavItem name='About' />
                     </nav>
-                    <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', position: 'absolute', bottom: '0', width: '100%', mb:'20px'}}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', position:'absolute', width: '100%', bottom: '0', mb:'10px'}}>
                         <SignButtons />
                     </Box>
                 </div>

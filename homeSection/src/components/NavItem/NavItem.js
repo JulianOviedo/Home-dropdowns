@@ -30,7 +30,8 @@ export default function NavItem({ name, dropdown, arrayItems, arrayIcons }) {
                             [theme.breakpoints.down('sm')]: {
                                 boxShadow:'none',
                                 backgroundColor: 'inherit',
-                                ml:'-10px'
+                                ml:'-10px',
+                                position:'relative'
                             }
                             
                         }}>
