@@ -42,7 +42,7 @@ const color = theme.palette
 theme.typography.h1 = {
     fontWeight: 600,
     fontSize: '82px',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
         fontSize: '35px',
         fontWeight: 700
     }
@@ -53,7 +53,7 @@ theme.typography.h2 = {
     color: color.secondary.main,
     fontSize: '18px',
     lineHeight: '28px',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
         fontSize: '17px',
     }
 }
