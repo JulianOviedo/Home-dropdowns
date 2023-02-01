@@ -15,10 +15,10 @@ const NavBar = () => {
     const companyItems = ['History', 'Our Team', 'Blog']
 
     return (
-        <Box component='header' sx={{ display: 'grid', gridTemplateColumns: '10% 70% auto' ,p: '20px', height:40, [theme.breakpoints.down('sm')]: {display: 'flex', justifyContent: 'space-between', p:'10px'}}}>
+        <Box component='header' sx={{ display: 'grid', gridTemplateColumns: '10% 70% auto', p: '20px', height: 40, [theme.breakpoints.down('sm')]: { display: 'flex', justifyContent: 'space-between', p: '10px' } }}>
             <Image width="84" height="27" src='logo.svg' alt='logo' />
             {/* display none on desktop design */}
-            <BurgerMenu/> 
+            <BurgerMenu />
             {/* display none on desktop design */}
             <nav className={styles.nav}>
                 <NavItem name='Features' dropdown={true} arrayItems={featuresItems} arrayIcons={featuresLogos} />
@@ -26,7 +26,9 @@ const NavBar = () => {
                 <NavItem name='Careers' />
                 <NavItem name='About' />
             </nav>
-            <SignButtons />
+            <Box sx={{ display: { sm: 'flex', xs: 'none' }, justifyContent: 'flex-end' }}>
+                <SignButtons />
+            </Box>
         </Box>
     )
 
